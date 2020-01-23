@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "2c62b75f-b45d-489a-bb18-128524c258b7": {
+        "id": "2c62b75f-b45d-489a-bb18-128524c258b7",
+        "parent": null,
+        "name": "SMSLamda",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9cc04505-7e8a-4657-b65b-9448e1dde32a"
+        ],
+        "isRemovable": false,
+        "filePath": "SMSLamda"
+      },
+      "9cc04505-7e8a-4657-b65b-9448e1dde32a": {
+        "id": "9cc04505-7e8a-4657-b65b-9448e1dde32a",
+        "parent": "2c62b75f-b45d-489a-bb18-128524c258b7",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SMSLamda/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1APISMSsendSMSpost",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "2c62b75f-b45d-489a-bb18-128524c258b7",
+    "openFiles": [
+      "9cc04505-7e8a-4657-b65b-9448e1dde32a"
+    ],
+    "currentFileId": "9cc04505-7e8a-4657-b65b-9448e1dde32a",
+    "resources": {
+      "apigusEast1APISMSsendSMSpost": {
+        "name": "apigusEast1APISMSsendSMSpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "APISMS",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "sendSMS",
+          "resourcePath": "/sendSMS",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "SMSLamda",
+    "projectDescription": "SMSLamda",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1579750501025
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "SMSLamda",
+      "url": "https://github.com/leoromerbric/SMSLamda"
+    }
+  }
+}
